@@ -18,7 +18,7 @@ header{
 }
 header>.a{
   margin:5px;
-  min-height: 200px;
+  min-height: 190px;
   width:100%;
   position:relative;
 }
@@ -30,7 +30,7 @@ section{
 }
 section>div{
   margin: 5px;
-  min-height: 200px;
+  min-height: 190px;
 }
 section>.b{
   position:relative;
@@ -48,7 +48,7 @@ aside>.f{
   margin:5px;
   position:relative;
   width:100%;
-  min-height: 200px;
+  min-height: 190px;
 }
 @media(min-width:600px){
   section{
@@ -59,10 +59,11 @@ aside>.f{
   }
   aside{
     width:28%;
-    min-height:400px;
+    min-height:390px;
+
   }
   aside>.f{
-    min-height: 400px;
+    min-height: 390px;
   }
 }
 /*
