@@ -24,20 +24,22 @@ body {
 }
 .container>.b{
   position: relative;
-  width:45%;
+  width:700px;
   order:1;
   max-height:200px;
 }
 .container>.c{
   order:3;
   flex-direction: column;
-  width:20%;
+  width:225px;
 }
 .container>.d{
   order:4;
+  width:225px;
 }
 .container>.e{
   order:5;
+  width:225px;
 }
 /*.container>.c, .container>.d, .container>.e{
   position: relative;
