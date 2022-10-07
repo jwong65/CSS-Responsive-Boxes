@@ -1,3 +1,55 @@
 body {
   background: peachpuff;
 }
+*{
+  border:brown 1px solid;
+}
+.container{
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  align-content: stretch;
+  width:100vw;
+}
+
+.container>div{
+  margin: 5px;
+  min-height: 200px;
+}
+.container>.a{
+  position: relative;
+  width:100%;
+  order:0;
+}
+.container>.b{
+  position: relative;
+  width: 17%;
+  order:1
+}
+.container>.c{
+  position: relative;
+  width: 17%;
+  order:2;
+}
+.container>.d{
+  position:relative;
+  width:17%;
+  order: 3;
+}
+.container>.h{
+  position: relative;
+  width:40%;
+  order: 4;
+}
+.container>.e{
+  order:5;
+  width:17%
+}
+.container>.f{
+  order:6;
+  width:17%
+}
+.container>.g{
+  order:7;
+  width:17%;
+}
