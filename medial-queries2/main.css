@@ -46,11 +46,25 @@ aside{
 }
 aside>.f{
   margin:5px;
-  min-height:200px;
   position:relative;
   width:100%;
+  min-height: 200px;
 }
-@media()
+@media(min-width:600px){
+  section{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:70%
+  }
+  aside{
+    width:28%;
+    min-height:400px;
+  }
+  aside>.f{
+    min-height: 400px;
+  }
+}
 /*
 
 .container>div{
