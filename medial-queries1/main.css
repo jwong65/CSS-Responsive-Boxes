@@ -1,3 +1,25 @@
 body {
   background: blanchedalmond;
 }
+.a{
+  border: 10em solid white;
+  display: flex;
+  flex-direction: column;
+}
+.b{
+  border: 5em solid black;
+  display: flex;
+  flex-direction: column;
+}
+.c{
+  border:5em solid yellow;
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 600px)
+{
+  .container
+  {
+    flex-direction: column;
+  }
+}
