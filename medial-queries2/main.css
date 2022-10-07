@@ -53,7 +53,7 @@ body {
   order:2;
   height: 300px;
 }
-@media(max-width:600px){
+@media screen and (max-width:600px){
 
   .container>.b{
     flex-direction:row;
