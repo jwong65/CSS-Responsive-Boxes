@@ -14,17 +14,23 @@ body {
   margin:10px;
 }
 .container>.a{
+  position: relative;
+  width:100%;
   flex:100%;
   min-height: 200px;
   border: red solid 1px;
 }
 .container>.b{
+  position: relative;
+  width: 60%;
   flex:70%;
   min-height:200px;
   min-width:300px;
   border: red solid 1px;
 }
 .container>.c{
+  position:relative;
+  width: 20%;
   min-height:200px;
   flex:20%;
   min-width:100px;
