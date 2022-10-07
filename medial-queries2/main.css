@@ -8,7 +8,10 @@ body {
   display:flex;
   flex-direction: row;
   flex-wrap:wrap;
-  min-width: 500px;
+  align-content: stretch;
+  width:100%;
+  /* stretch is not stretching c/d/e towards b*/
+  
 }
 .container>div{
   margin: 5px;
@@ -21,27 +24,31 @@ body {
 }
 .container>.b{
   position: relative;
-  width:500px;
+  width:45%;
   order:1;
-  max-height:200px
+  max-height:200px;
 }
 .container>.c{
-  order:2;
+  order:3;
+  flex-direction: column;
+  width:20%;
 }
 .container>.d{
-  order:3;
-}
-.container>.e{
   order:4;
 }
-.container>.c, .container>.d, .container>.e{
+.container>.e{
+  order:5;
+}
+/*.container>.c, .container>.d, .container>.e{
   position: relative;
   width:150px; 
 }
+*/
 .container>.f{
+  flex-direction: column;
+  width:50%;
   position: relative;
-  min-width:20%;
-  order:5;
+  order:2;
   height: 300px;
 }
 @media(max-width:600px){
