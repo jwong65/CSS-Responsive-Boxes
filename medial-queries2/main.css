@@ -53,7 +53,7 @@ body {
   order:2;
   height: 300px;
 }
-@media(max-width:1000px){
+@media(max-width:600px){
 
   .container>.b{
     flex-direction:row;
@@ -61,12 +61,12 @@ body {
   }
   .container>.c{
     flex-direction: row;
-    width:33%;
+    width:30%;
     order:2;
   }
   .container>.d{
     flex-direction: row;
-    width:33%;
+    width:30%;
     order:3;
   }
   .container>.e{
