@@ -1,33 +1,37 @@
 body {
   background: blanchedalmond;
 }
-.a{
-  border: 10px solid black;
-  display: flex;
-  min-height: 300px;
-  max-width: 600px;
-
-}
-.b{
-  border: 10px solid white;
-  min-height: 100px;
-  max-width: 200px;
-
-}
-.c{
-  border:10px solid yellow;
-  
-  display: flex;
-  max-width: 200px;
-  min-height: 100px;
-  
-}
-@media (max-width: 600px)
-{
-  .container
-  {
-    display: flex;
+@media(min-width:600px){
+  .container{
+    display:flex;
     flex-wrap: wrap;
+    min-height:10vh;
+    /* 10vh makes like 10% of the viewport*/
+    min-width:100vw;
     flex-direction: row;
   }
+  
+  .container>.a{
+    min-width: 100vw;
+    min-height: 250px;
+    
+  }
+  .container>.b{
+    min-height:200px;
+    min-width: 50vw;
+  }
+  .container>.c{
+    min-height:200px;
+    min-width:43vw;
+  }
+  
+}
+
+.container{
+  border: 1px solid purple;
+
+}
+.a, .b, .c{
+  border: 1px solid red;
+  margin: 10px;
 }
