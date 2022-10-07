@@ -1,33 +1,57 @@
 body {
   background: blanchedalmond;
 }
-
 .container{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction:row;
-  border: 1px solid purple;
-  min-width: auto;
- 
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.container>.a{
+  width:100%;
+}
+.container>.b, .container>.c{
+  width:100%;
 }
 .container>div{
   margin:10px;
-}
-.container>.a{
-  position: relative;
-  width:100%;
-  flex:100%;
   min-height: 200px;
   border: red solid 1px;
 }
+
+@media(min-width:600px){
+  .container{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+  }
+  .container>.b{
+    position: relative;
+    width:60%;
+  }
+  .container>.c{
+    position: relative;
+    width:36%;
+  }
+  /*.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    border: 1px solid purple;
+    min-width: auto;
+  }
+  
+  .container>.a{
+    position: relative;
+    width:100%;
+    flex:100%;
+  }
 .container>.b{
-  position: relative;
-  width: 60%;
-  flex:70%;
-  min-height:200px;
-  min-width:300px;
-  border: red solid 1px;
-}
+    position: relative;
+    width: 60%;
+    flex:70%;
+    min-height:200px;
+    min-width:300px;
+    border: red solid 1px;
+  }
 .container>.c{
   position:relative;
   width: 20%;
@@ -35,18 +59,6 @@ body {
   flex:20%;
   min-width:100px;
   border: red solid 1px;
-}
-
-@media(max-width:600px){
-  .container{
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  .container>.a{
-    width:100%;
-  }
-  .container>.b, .container>.c{
-    width:100%;
-  }
+}*/
 }
 
