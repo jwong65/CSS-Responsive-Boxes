@@ -53,3 +53,25 @@ body {
   order:7;
   width:17%;
 }
+@media(max-width:1000px){
+  .container>.b, .container>.c, .container>.d{
+    width:32%;
+  }
+
+  .container>.h{
+    order:7;
+    width:100%
+  }
+  .container>.e{
+    order:4;
+    width:32%
+  }
+  .container>.f{
+    order:5;
+    width:32%
+  }
+  .container>.g{
+    order:6;
+    width:32%
+  }
+}
