@@ -2,24 +2,32 @@ body {
   background: blanchedalmond;
 }
 .a{
-  border: 10em solid white;
+  border: 10px solid black;
   display: flex;
-  flex-direction: column;
+  min-height: 300px;
+  max-width: 600px;
+
 }
 .b{
-  border: 5em solid black;
-  display: flex;
-  flex-direction: column;
+  border: 10px solid white;
+  min-height: 100px;
+  max-width: 200px;
+
 }
 .c{
-  border:5em solid yellow;
+  border:10px solid yellow;
+  
   display: flex;
-  flex-direction: row;
+  max-width: 200px;
+  min-height: 100px;
+  
 }
 @media (max-width: 600px)
 {
   .container
   {
-    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
 }
