@@ -53,7 +53,7 @@ body {
   order:7;
   width:17%;
 }
-@media(max-width:1000px){
+@media(max-width:600px){
   .container>.b, .container>.c, .container>.d{
     width:32%;
   }
