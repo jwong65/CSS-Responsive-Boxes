@@ -40,6 +40,7 @@ aside>.h{
   width:100%;
   border:1px solid royalblue;
   min-height: 400px;
+  margin: 5px;
 }
 @media (min-width:600px){
   .container{
