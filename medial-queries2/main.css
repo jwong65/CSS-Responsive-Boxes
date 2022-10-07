@@ -6,26 +6,51 @@ body {
 }
 .container{
   display:flex;
+  flex-direction: row;
   flex-wrap:wrap;
   min-width: 500px;
 }
 .container>div{
-  margin: 10px;
+  margin: 5px;
   min-height: 200px;
 }
-.container>.a, .container>.b{
+.container>.a{
   position: relative;
   width:100%;
+  order:0;
+}
+.container>.b{
+  position: relative;
+  width:500px;
+  order:1;
+  max-height:200px
+}
+.container>.c{
+  order:2;
+}
+.container>.d{
+  order:3;
+}
+.container>.e{
+  order:4;
 }
 .container>.c, .container>.d, .container>.e{
   position: relative;
-  width:30%;
+  width:150px; 
 }
 .container>.f{
   position: relative;
-  min-width:100%;
+  min-width:20%;
+  order:5;
+  height: 300px;
 }
-/*@media(max-width:600px;){
+@media(max-width:600px){
+  .container{
+    flex-direction: column;
+    flex-wrap:wrap;
+  }
+  .f{
+    width:10%;
+  }
 
 }
-*/
