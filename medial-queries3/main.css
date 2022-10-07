@@ -53,9 +53,9 @@ body {
   order:7;
   width:17%;
 }
-@media(max-width:600px){
+@media screen and (max-width:600px){
   .container>.b, .container>.c, .container>.d{
-    width:32%;
+    width:30%;
   }
 
   .container>.h{
@@ -64,14 +64,14 @@ body {
   }
   .container>.e{
     order:4;
-    width:32%
+    width:30%
   }
   .container>.f{
     order:5;
-    width:32%
+    width:30%
   }
   .container>.g{
     order:6;
-    width:32%
+    width:30%
   }
 }
