@@ -24,22 +24,22 @@ body {
 }
 .container>.b{
   position: relative;
-  width:70vw;
+  width:70%;
   order:1;
   max-height:200px;
 }
 .container>.c{
   order:3;
   flex-direction: column;
-  width:23vw;
+  width:20%;
 }
 .container>.d{
   order:4;
-  width:23vw;
+  width:20%;
 }
 .container>.e{
   order:5;
-  width:23vw;
+  width:20%;
 }
 /*.container>.c, .container>.d, .container>.e{
   position: relative;
@@ -48,18 +48,36 @@ body {
 */
 .container>.f{
   flex-direction: column;
-  width:20vw;
+  width:20%;
   position: relative;
   order:2;
   height: 300px;
 }
-@media(max-width:600px){
-  .container{
+@media(max-width:1000px){
+
+  .container>.b{
+    flex-direction:row;
+    width:100%
+  }
+  .container>.c{
+    flex-direction: row;
+    width:33%;
+    order:2;
+  }
+  .container>.d{
+    flex-direction: row;
+    width:33%;
+    order:3;
+  }
+  .container>.e{
     flex-direction: column;
     flex-wrap:wrap;
+    width:30%;
+    order:4;
   }
-  .f{
-    width:10%;
+  .container>.f{
+    order:5;
+    width:100%
   }
 
 }
