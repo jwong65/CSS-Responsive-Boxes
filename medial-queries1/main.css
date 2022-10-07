@@ -4,9 +4,9 @@ body {
 
 .container{
   display: flex;
-  flex-wrap:wrap;
-  border: 1px solid purple;
+  flex-wrap: wrap;
   flex-direction:row;
+  border: 1px solid purple;
   min-width: auto;
  
 }
@@ -19,7 +19,7 @@ body {
   border: red solid 1px;
 }
 .container>.b{
-  flex:50%;
+  flex:70%;
   min-height:200px;
   min-width:300px;
   border: red solid 1px;
@@ -31,7 +31,7 @@ body {
   border: red solid 1px;
 }
 
-@media(max-width:600px){
+@media(max-width:1000px){
   .container{
     flex-direction: column;
     flex-wrap: wrap;
