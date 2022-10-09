@@ -10,7 +10,7 @@ body {
   flex-wrap:wrap;
   width:100vw;
   /* stretch is not stretching c/d/e towards b*/
-  
+
 }
 header{
   width:100%;
@@ -35,10 +35,12 @@ section>div{
 section>.b{
   position:relative;
   width:100%;
+  flex-grow: 3;
 }
 section>.c, section>.d,section>.e{
   position: relative;
   width:30%;
+  flex-grow: 1;
 }
 aside{
   position: relative;
