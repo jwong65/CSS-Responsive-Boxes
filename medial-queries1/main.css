@@ -25,11 +25,13 @@ body {
   }
   .container>.b{
     position: relative;
-    width:60%;
+    /*width:60%;*/
+    flex-grow:3;
   }
   .container>.c{
     position: relative;
-    width:36%;
+    /*width:36%;*/
+    flex-grow: 1;
   }
   /*.container{
     display: flex;
